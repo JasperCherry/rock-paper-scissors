@@ -1,0 +1,4 @@
+git repo
+
+
+get proportions using 3 dimensions
