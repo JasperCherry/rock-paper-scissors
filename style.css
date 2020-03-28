@@ -1,0 +1,32 @@
+body {
+  background-color: orange;
+}
+
+#canvas-wrapper {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+}
+
+#video {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  visibility: hidden;
+  width: auto;
+  height: auto;
+  position: absolute;
+}
+
+button {
+  background-color: green;
+  border: none;
+  color: white;
+  padding: 15px;
+  margin: 10px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  border: 2px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+}
