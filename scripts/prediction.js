@@ -41,6 +41,24 @@ const landmarksRealTime = async (video) => {
           alert('Recorded scissors gesture');
         }
       }
+
+      if (recognitionLive) {
+        const proportions = getProportionsLimited(result);
+        const output = net.run(proportions);
+
+        console.log({ output });
+
+        const { rock, paper, scissors } = output;
+        const maxResult = Math.max(rock, paper, scissors);
+
+        if (maxResult === rock) {
+          document.getElementById('recognizedGesture').innerHTML = 'Result: rock';
+        } else if (maxResult === paper) {
+          document.getElementById('recognizedGesture').innerHTML = 'Result: paper';
+        } else if (maxResult === scissors) {
+          document.getElementById('recognizedGesture').innerHTML = 'Result: scissors';
+        }
+      }
     }
 
     requestAnimationFrame(frameLandmarks);

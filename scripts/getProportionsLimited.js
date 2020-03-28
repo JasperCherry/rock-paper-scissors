@@ -35,7 +35,7 @@ const getProportionsLimited = (data) => {
     }
   }
 
-  console.log({ proportions })
+  proportionsObject = Object.assign({}, proportions);
 
-  return proportions;
+  return proportionsObject;
 };

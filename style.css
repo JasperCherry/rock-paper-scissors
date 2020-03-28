@@ -17,6 +17,13 @@ body {
   position: absolute;
 }
 
+#recognizedGesture {
+  top: 10%;
+  left: 40%;
+  position: absolute;
+  font-size: 50px;
+}
+
 button {
   background-color: green;
   border: none;

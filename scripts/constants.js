@@ -21,8 +21,7 @@ const rockData = [];
 const paperData = [];
 const scissorsData = [];
 
-const recordingTest = false;
-const testData = null;
+let recognitionLive = false;
 
 const config = {
   hiddenLayers: [20, 20],
