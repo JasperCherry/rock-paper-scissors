@@ -19,7 +19,7 @@ body {
 
 #recognizedGesture {
   top: 10%;
-  left: 40%;
+  left: 50%;
   position: absolute;
   font-size: 50px;
 }
